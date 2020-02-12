@@ -5,7 +5,7 @@ from random import randrange
 app=Flask(__name__)
 
 
-@app.route('/echo', methods=["GET","POST"])
+@app.route('/echo', methods=["POST"])
 def response():
 	try:
 		if(request.is_json):
@@ -26,6 +26,7 @@ def random():
 
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True, host = '0.0.0.0')
 
 	#curl -X POST -H 'Content-Type: application/json' http://127.0.0.1:5000/echo -d '{"name":"Sealia"}'
+
