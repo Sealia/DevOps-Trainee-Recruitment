@@ -24,7 +24,7 @@ def random():
 	return jsonify({"status":"ok","number": randrange(1,100)})
 
 
+
 if __name__ == '__main__':
 	app.run(debug=True, host = '0.0.0.0')
 
-	#curl -X POST -H 'Content-Type: application/json' http://127.0.0.1:5000/echo -d '{"name":"Sealia"}'
