@@ -1,6 +1,6 @@
 # DevOps-Trainee-Recruitment
 
-To build a Docker image go to the folder app in your terminal and use command " docker build -t app:latest . "
+To build a Docker image go to the Dockerfile directory in your terminal and use command " docker build -t app:latest . "
 
 To run it use command " docker run -d -p 5000:5000 app "
 
